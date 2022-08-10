@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>New person</title>
+    <title>New user</title>
 </head>
 <body>
 
@@ -14,7 +14,7 @@
     <input type="text" th:field="*{lastName}" id="lastName"/>
     /<br>
     <label for="age">ENTER age: </label>
-    <input type="text" th:field="*{age}" id="age"/>
+    <input type="number" th:field="*{age}" id="age"/>
     <br>
     <input type="submit" value="Save"/>
 </form>

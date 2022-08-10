@@ -20,7 +20,7 @@ public class UserDaoImpl implements UserDAO {
     }
 
     @Override
-    public User getUserById(long id) {
+    public User getUserById(int id) {
      return entityManager.find(User.class,id);
     }
 
@@ -30,7 +30,7 @@ public class UserDaoImpl implements UserDAO {
     }
 
     @Override
-    public void removeUser(long id) {
+    public void removeUser(int id) {
         entityManager.remove(getUserById(id));
     }
 
